@@ -16,3 +16,5 @@ class Main{
     System.out.println("no valid pivot");
     }
 }
+output:
+3
