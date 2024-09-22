@@ -1,0 +1,28 @@
+import java.util.*;
+class Main{
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the height:");
+    float h=sc.nextInt();
+    System.out.println("enter the weight");
+    float w=sc.nextInt();
+    float bmi=w/(h*h);
+    int category;
+    if(w<18){
+        category=0;
+    }
+    else if(w>=18 || w<25){
+        category=1;
+    }
+    else if(w>=25 || w<30){
+        category=2;
+    }
+    else if(w>=30 || w<40){
+        category=3;
+    }
+    else{
+        category=4;
+    }
+    System.out.println(category);
+}
+}
