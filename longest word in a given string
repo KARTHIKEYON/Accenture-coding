@@ -1,0 +1,19 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     Scanner sc = new Scanner(System.in);
+     String str = sc.nextLine();
+     String words[]=str.split(" ");
+     String longestString="";
+     for(String word:words){
+         if(word.length()>longestString.length()){
+             longestString=word;
+         }
+     }
+     System.out.print(longestString);
+    }
+}
+
+output:
+yes no number
+number
